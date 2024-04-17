@@ -19,3 +19,13 @@ echo "Hostname: $HOSTNAME"
 echo "Process ID of the current shell script: $$"
 
 echo "**************************************************************************"
+
+Num=$3
+
+if [ $Num -gt 100 ]
+ then
+     echo "$Num is greater than 100"
+ else
+     echo "$Num is less than 100"
+fi     
+echo "***************************************************************************"
