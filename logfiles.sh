@@ -3,7 +3,7 @@
 userid=$(id -u)
 timestamp=$(date +%F-%H-%M)
 scriptname=$(echo $0 | cut -d "." -f1)
-logfile=/temp/$scriptname-$timestamp.log
+logfile=/tmp/$scriptname-$timestamp.log
 if [ $userid -eq 0 ]
    then
        echo "you are a super user"
