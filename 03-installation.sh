@@ -9,7 +9,7 @@ if [ $userid -ne 0 ]
        echo "you are a super user"
 fi
 
-dnf install mysqll -y
+dnf install mysql -y
 
 if [ $? -eq 0 ]
    then
@@ -20,4 +20,4 @@ if [ $? -eq 0 ]
 fi
 
 echo "script is proceding"
-
+echo "userid is $userid"
