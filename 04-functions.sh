@@ -8,7 +8,7 @@ then
     exit
  else 
     echo "you are a super user"
-
+fi
 
 
 validate(){
