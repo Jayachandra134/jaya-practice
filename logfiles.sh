@@ -22,9 +22,9 @@ validate(){
   fi
 }
 
-dnf install mysql -y &>>logfile
+dnf install mysql -y &>>$logfile
 validate $? "sql installation ::"
 echo "$?"
-dnf install git -y &>>logfile
+dnf install git -y &>>$logfile
 validate $? "Git installation ::"
 echo "$?"
