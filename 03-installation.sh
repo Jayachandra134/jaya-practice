@@ -9,5 +9,5 @@ if [ $userid -ne 0 ]
        echo "you are a super user"
 fi
 
-dnf install mysql -y
+sudo dnf install mysql -y
 
