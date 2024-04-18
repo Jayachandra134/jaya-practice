@@ -9,7 +9,6 @@ then
  else 
     echo "you are a super user"
 
-dnf install mysql -y
 
 
 validate(){
@@ -22,4 +21,6 @@ validate(){
     fi
 }
 
+
+dnf install mysql -y
 validate $? "installing mysql"
