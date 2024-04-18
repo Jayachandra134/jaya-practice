@@ -23,4 +23,5 @@ validate(){
 
 
 dnf install mysql -y
+echo "$?"
 validate $? "installing my sql"
