@@ -21,4 +21,4 @@ validate(){
          echo "$2 is Failed"
 }
 
-validate $? "installing mysql'
+validate $? "installing mysql"
