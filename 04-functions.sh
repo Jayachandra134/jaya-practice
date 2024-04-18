@@ -19,6 +19,7 @@ validate(){
          exit
        else
          echo "$2 is Failed"
+    fi
 }
 
 validate $? "installing mysql"
