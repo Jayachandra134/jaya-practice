@@ -1,5 +1,4 @@
 #!/bin/bash
-
 userid=$(id -u)
 timestamp=$(date +%F-%H-%M)
 scriptname=$(echo $0 | cut -d "." -f1)
