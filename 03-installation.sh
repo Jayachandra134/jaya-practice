@@ -3,9 +3,11 @@ userid=$(id -u)
 
 if [ $userid -ne 0 ]
    then
-       echo "install with a super user"
+       echo "please run this script with super user"
+       exit 1  #Comes out if error occurs
     else
        echo "you are a super user"
 fi
 
+dnf install mysql -y
 
