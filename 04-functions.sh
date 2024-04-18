@@ -12,7 +12,7 @@ fi
 
 
 validate(){
-  if [ $1 -ne 0 ]
+  if [ $1 -eq 0 ]
       then
          echo "mysql installation success"
          exit
