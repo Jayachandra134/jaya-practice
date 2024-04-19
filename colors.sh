@@ -24,6 +24,7 @@ validate()
     if [ $1 -ne 0 ]
       then
         echo -e "$2......$R FAILED $N"
+        exit
       else
         echo -e "$2......$G Success $N"  
     fi
@@ -38,4 +39,4 @@ validate $? "Installation of git ::"
 dnf install dockerr -y &>>$logfile
 validate $? "Installation of docker ::"
 
-echo "script is moving ahead" &>>logfile
+echo "script is moving ahead"
